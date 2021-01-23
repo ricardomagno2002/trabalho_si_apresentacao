@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<title>viewport</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="bootstrap.js"></script>
+</head>
+<body>
+<body style="background-color:cyan;">
+	<div class="container">
+		<h1>Apresentação</h1>
+		<div class="col-sm-12">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-primary">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Nome: 
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+								Ricardo Oliveira
+								<br> <img src="ricardo.jpg" alt="fotografia" width=100 height=100> </br>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-danger">
+					<div class="panel-heading" role="tab" id="headingTwo">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Atividades preferidas:
+							</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="panel-body">
+								Jogar ténis, ouvir música e jogar videojogos.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-warning">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Expectativas para o curso:
+							</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+								Aprender o máximo possível no curso para aplicar os conhecimentos no futuro num emprego estável.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+	<hr></hr>
+	<p>E tu, quem és?</p>
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#form">
+    Falar sobre mim
+  </button> 
+  <hr></hr>
+  <br>
+  <br>
+  <br>
+  Trabalho realizado a pedido do professor Luís Borges Gouveia.
+  </br>
+	<nav class="menu">
+<ul>
+	<li><a href="http://homepage.ufp.pt/lmbg/">Website do professor</a></li>
+</ul>
+<a class="cta" href="#"><button>Alerta</button></a>
+        <p id = "GFG_UP" style = 
+            "font-size: 16px; font-weight: bold;">      
+        </p> 
+          
+        <button onclick = "gfg_Run()">  
+            Mudar cor de fundo da página 
+        </button> 
+          
+        <p id = "GFG_DOWN" style = 
+            "color:green; font-size: 20px; font-weight: bold;"> 
+        </p> 
+          
+        <script> 
+            var el_up = document.getElementById("GFG_UP"); 
+            var el_down = document.getElementById("GFG_DOWN"); 
+          
+            el_up.innerHTML = str; 
+          
+            function changeColor(color) { 
+                document.body.style.background = color; 
+            } 
+              
+            function gfg_Run() { 
+                changeColor('yellow'); 
+                el_down.innerHTML = "Cor de fundo mudada!"; 
+            }          
+        </script>  
+</nav>
+</div>
+
+<div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">Formulário</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="text1">Nome:</label>
+            <input type="text" class="form-control" id="text" aria-describedby="emailHelp" placeholder="(ex.: Romeu? Julieta?)">
+          </div>
+          <div class="form-group">
+            <label for="text1">Idade:</label>
+            <input type="text" class="form-control" id="text" aria-describedby="emailHelp" placeholder="(0-100)">
+          </div>
+          <div class="form-group">
+            <label for="text1">O que gostas mais de fazer nos teus tempos livres?:</label>
+            <input type="text" class="form-control" id="text" aria-describedby="emailHelp" placeholder="(ex.: Jogar à bola, jogar videojogos)">
+            <small id="textHelp" class="form-text text-muted">Não irei guardar a tua informação!</small>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-center">
+          <button type="submit" class="btn btn-success">Registar</button>
+        </div>
+      </form>		  
+    </div>  
+  </div>	
+</div>
+</button>
+</body>
+</html>
